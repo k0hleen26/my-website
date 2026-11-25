@@ -7,7 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My First Website</title>
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.45;
+    }
+}
 
+button {
+    animation: blink 1.5s ease-in-out infinite;
+}
     <style>
         body {
             font-family: Helvetica, sans-serif;
